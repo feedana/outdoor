@@ -111,3 +111,32 @@ body {
   border-radius: 20px;
 }
 
+/* Info Section */
+.info {
+  background: #fff;
+  padding: 60px 80px;
+  text-align: center;
+}
+
+.info-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.info p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.learn-more {
+  text-decoration: none;
+  font-weight: 600;
+  color: #0099cc;
+  transition: color 0.3s;
+}
+
+.learn-more:hover {
+  color: #006688;
+}
