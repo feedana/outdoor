@@ -1,0 +1,113 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fefefe;
+  color: #222;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 50px;
+  background: rgb(53, 68, 58);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fafbf9;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #0099cc;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav-icons i:hover {
+  color: #0099cc;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 90vh;
+  background: url('../images/herobg.jpg') no-repeat center center/cover; /* replace hero.jpg with your image */
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  color: white;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.hero-slider {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.slider-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.slider-btn:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.slide-name {
+  font-size: 16px;
+  font-weight: 500;
+  background: rgba(0,0,0,0.4);
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
