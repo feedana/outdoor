@@ -71,7 +71,7 @@ body {
   user-select: none;
   padding: 20px;
   position: relative;
-  justify-content: flex-end; /* Push icons to the right */
+  justify-content: flex-end; 
 }
 
 /* Base popup styles */
@@ -86,13 +86,9 @@ body {
   width: 250px;
   z-index: 10;
 }
-
-/* Search popup aligned to right under first icon (🔍) */
 .search-popup {
   right: 60px; /* adjust to be under first icon */
 }
-
-/* Menu popup aligned to right under second icon (☰) */
 .menu-popup {
   right: 0;
 }
@@ -150,6 +146,3 @@ body {
   color: #333;
 }
 
-.menu-popup a:hover {
-  color: #0073e6;
-}
