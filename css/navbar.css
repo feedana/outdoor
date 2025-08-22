@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  @font-face {
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+    font-family: PoppinsRegular;
+}
   font-family: 'Poppins', sans-serif;
 }
 
