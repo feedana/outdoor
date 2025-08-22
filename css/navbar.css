@@ -47,7 +47,7 @@ body {
   color: #0099cc;
 }
 
-.nav-icons {
+/* .nav-icons {
   display: flex;
   gap: 15px;
   font-size: 20px;
@@ -61,5 +61,95 @@ body {
   margin-left: 15px;
   font-size: 1.2rem;
   cursor: pointer;
+} */
+
+.icons {
+  display: flex;
+  gap: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+  padding: 20px;
+  position: relative;
+  justify-content: flex-end; /* Push icons to the right */
 }
 
+/* Base popup styles */
+.popup {
+  display: none;
+  position: absolute;
+  top: 100%; /* below icons */
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  padding: 15px 20px;
+  width: 250px;
+  z-index: 10;
+}
+
+/* Search popup aligned to right under first icon (🔍) */
+.search-popup {
+  right: 60px; /* adjust to be under first icon */
+}
+
+/* Menu popup aligned to right under second icon (☰) */
+.menu-popup {
+  right: 0;
+}
+
+/* Show popup when toggled */
+#toggleSearch:checked ~ .search-popup {
+  display: block;
+}
+
+#toggleMenu:checked ~ .menu-popup {
+  display: block;
+}
+
+/* Close clickable background */
+.close-area {
+  position: fixed;
+  inset: 0;
+  cursor: default;
+  background: transparent;
+  z-index: 5;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #666;
+}
+
+/* Search input */
+.search-popup input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Menu list */
+.menu-popup ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-popup li {
+  margin: 10px 0;
+}
+
+.menu-popup a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+}
+
+.menu-popup a:hover {
+  color: #0073e6;
+}
