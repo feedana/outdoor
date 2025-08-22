@@ -54,6 +54,11 @@ body {
 .nav-icons i:hover {
   color: #0099cc;
 }
+.icons span {
+  margin-left: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
 
 /* Hero Section */
 .hero {
