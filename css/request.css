@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter/Inter-Regular.woff2') format('woff2'),
+       url('./fonts/Inter/Inter-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter/Inter-Bold.woff2') format('woff2'),
+       url('./fonts/Inter/Inter-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header */
+.header-image {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+/* Main Content */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+/* Intro section */
+.intro {
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.intro h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.intro p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Form Section - Flex container */
+.form-section {
+  display: flex;
+  gap: 40px;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+
+/* Left image */
+.form-image {
+  flex: 1;
+  max-width: 50%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.form-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Form */
+.project-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 320px;
+}
+
+/* Headings inside form */
+.project-form h2 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #111;
+}
+
+/* Inputs and selects */
+.project-form input,
+.project-form select {
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.project-form input:focus,
+.project-form select:focus {
+  border-color: #000;
+  outline: none;
+}
+
+/* Phone input group */
+.phone-input {
+  display: flex;
+  gap: 10px;
+}
+
+.phone-input select {
+  max-width: 110px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+/* Location inputs group */
+.location-inputs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.location-inputs input {
+  flex: 1;
+  min-width: 100px;
+}
+
+/* Submit button */
+.submit-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.submit-btn:hover {
+  background-color: #222;
+}
+
