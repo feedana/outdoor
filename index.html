@@ -5,13 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Outdoor+</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
   
   <!-- Navbar -->
   <header class="navbar">
     <div class="logo">
-      <img src="./images/logo.png" alt="Outdoor+ Logo">
+      <img src="./images/logoblack.png" alt="Outdoor+ Logo">
     </div>
     <nav class="nav-links">
       <a href="#">Sunroom</a>
@@ -21,12 +23,43 @@
       <a href="#">Windows & Doors</a>
 
     </nav>
-    <div class="icons">
-      <span class="search">🔍</span>
-      <span class="menu">☰</span>
-    </div>
-    
+
+    <!-- Radios -->
+<input type="radio" name="toggle" id="toggleNone" hidden checked>
+<input type="radio" name="toggle" id="toggleSearch" hidden>
+<input type="radio" name="toggle" id="toggleMenu" hidden>
+
+<!-- Icons -->
+<div class="icons">
+  <label for="toggleSearch" class="search-icon">🔍</label>
+  <label for="toggleMenu" class="menu-icon">☰</label>
+</div>
+
+<!-- Search popup -->
+<div class="popup search-popup">
+  <label for="toggleNone" class="close-area"></label>
+  <div class="popup-content">
+    <label for="toggleNone" class="close-btn">×</label>
+    <input type="text" placeholder="Search...">
+  </div>
+</div>
+
+<!-- Menu popup -->
+<div class="popup menu-popup">
+  <label for="toggleNone" class="close-area"></label>
+  <div class="popup-content">
+    <label for="toggleNone" class="close-btn">×</label>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</div>  
+ 
   </header>
+  <!-- End of Navbar -->
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">

@@ -5,10 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pergola</title>
   <link rel="stylesheet" href="./css/pergola.css"> 
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/footer.css">
 
 </head>
 <body>
-  
+   <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="./images/logoblack.png" alt="Outdoor+ Logo">
+    </div>
+    <nav class="nav-links">
+      <a href="#">Sunroom</a>
+      <a href="#">Louver</a>
+      <a href="./pergola.html">Pergola</a>
+      <a href="#">Blinds</a>
+      <a href="#">Windows & Doors</a>
+
+    </nav>
+
+    <!-- Radios -->
+<input type="radio" name="toggle" id="toggleNone" hidden checked>
+<input type="radio" name="toggle" id="toggleSearch" hidden>
+<input type="radio" name="toggle" id="toggleMenu" hidden>
+
+<!-- Icons -->
+<div class="icons">
+  <label for="toggleSearch" class="search-icon">🔍</label>
+  <label for="toggleMenu" class="menu-icon">☰</label>
+</div>
+
+<!-- Search popup -->
+<div class="popup search-popup">
+  <label for="toggleNone" class="close-area"></label>
+  <div class="popup-content">
+    <label for="toggleNone" class="close-btn">×</label>
+    <input type="text" placeholder="Search...">
+  </div>
+</div>
+
+<!-- Menu popup -->
+<div class="popup menu-popup">
+  <label for="toggleNone" class="close-area"></label>
+  <div class="popup-content">
+    <label for="toggleNone" class="close-btn">×</label>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</div>  
+ 
+  </header>
+  <!-- End of Navbar -->
   <!-- Hero Section -->
   <header class="hero-section">
     <img src="./imagespergola/bg.png" alt="Pergola Top View" class="hero-image">
@@ -70,6 +121,55 @@
     <button>Contact Us →</button>
   </div>
 </section>
-  <a href="./footer.html" class="footer">footer</a>
+ 
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-logo">OUTDORR+</div>
+  <p>Sustainable Outdoor Living Structures | Custom Pergolas, Sunrooms, Louvers & ADU Modules</p>
+  
+  <div class="footer-links">
+    <a href="./pergola.html">Pergolas</a>
+    <a href="#">Sunrooms</a>
+    <a href="#">Louvers</a>
+    <a href="#">Blinds</a>
+    <a href="#">Window & Doors</a>
+    <a href="#">ADU Modules</a>
+  </div>
+
+  <div class="footer-info">
+    <div>
+      <p><strong>Contact</strong></p>
+      <p>900 Pepper Tree Ln, Suit 500<br> Santa Clara, CA 95051</p>
+      <p>info@outdorr.com<br> +1 (669) 301 0915</p>
+    </div>
+     <!-- social -->
+  <div class="social-links">
+  <p><strong>Follow us</strong></p>
+  <p>
+    <a href="https://www.instagram.com" target="_blank" class="social-link instagram">
+      <img src="./images/Instagram.png" alt="Instagram Icon"> 
+    </a>
+    <a href="https://www.facebook.com" target="_blank" class="social-link facebook">
+      <img src="./images/Facebook.png" alt="Facebook Icon"> 
+    </a>
+    <a href="https://www.linkedin.com" target="_blank" class="social-link linkedin">
+      <img src="./images/Linkedin.png" alt="LinkedIn Icon"> 
+    </a>
+    <a href="https://www.pinterest.com" target="_blank" class="social-link pinterest">
+      <img src="./images/Pinterest.png" alt="Pinterest Icon"> 
+    </a>
+  </p>
+</div>
+    <div>
+      <p><strong>Subscribe</strong></p>
+      <input type="email" placeholder="Enter your email address">
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>All Rights Reserved By The Outdorr Inc / US California / 2023</p>
+  </div>
+</footer>
+
 </body>
 </html>
