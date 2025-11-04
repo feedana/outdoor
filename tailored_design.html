@@ -6,59 +6,41 @@
   <link rel="stylesheet" href="./css/tailored_design.css">
   <link rel="stylesheet" href="./css/navbar.css">
   <link rel="stylesheet" href="./css/footer.css">
+<!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-  
   <!-- Navbar -->
   <header class="navbar">
     <div class="logo">
       <img src="./images/logoblack.png" alt="Outdoor+ Logo">
     </div>
-    <nav class="nav-links">
+
+    <nav class="nav-links" id="navLinks">
       <a href="#">Sunroom</a>
       <a href="#">Louver</a>
       <a href="./pergola.html">Pergola</a>
       <a href="#">Blinds</a>
       <a href="#">Windows & Doors</a>
-
+      <a href="./contact.html">Contact</a>
     </nav>
 
-    <!-- Radios -->
-<input type="radio" name="toggle" id="toggleNone" hidden checked>
-<input type="radio" name="toggle" id="toggleSearch" hidden>
-<input type="radio" name="toggle" id="toggleMenu" hidden>
-
-<!-- Icons -->
-<div class="icons">
-  <label for="toggleSearch" class="search-icon">🔍</label>
-  <label for="toggleMenu" class="menu-icon">☰</label>
-</div>
-
-<!-- Search popup -->
-<div class="popup search-popup">
-  <label for="toggleNone" class="close-area"></label>
-  <div class="popup-content">
-    <label for="toggleNone" class="close-btn">×</label>
-    <input type="text" placeholder="Search...">
-  </div>
-</div>
-
-<!-- Menu popup -->
-<div class="popup menu-popup">
-  <label for="toggleNone" class="close-area"></label>
-  <div class="popup-content">
-    <label for="toggleNone" class="close-btn">×</label>
-    <ul>
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="./contact.html">Contact</a></li>
-    </ul>
-  </div>
-</div>  
- 
+    <div class="navbar-right">
+      <div id="clock" class="clock"></div>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <button class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
   </header>
+
   <!-- End of Navbar -->
+
+
    <!-- Project Section -->
    <section class="project-design">
   <div class="container">
@@ -166,7 +148,8 @@
     <p>All Rights Reserved By The Outdorr Inc / US California / 2023</p>
   </div>
 </footer>
-
+<!--  js link  -->
+<script src="app.js"></script>
 
 </body>
 </html>
